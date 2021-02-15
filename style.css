@@ -1,0 +1,204 @@
+body
+{
+	background-color: #424254;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	color: #243331;
+}
+
+#container
+{
+	width: 850px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer
+{
+	text-align: center;
+	background-color: #FFEED9;
+	border-radius: 10px;
+	border: 2px dashed #CC2A41;
+	padding: 30px;
+	margin: 10px;
+	font-size: 14px;
+}
+
+.square
+{
+	width: 400px;
+	float: left;
+	margin: 10px;
+}
+
+.tile1
+{
+	width: 300px;
+	background-color: #64908A;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+	outline: none;	
+}
+
+a.tilelink
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+	width: 300px;
+}
+
+#logo
+{
+	background-color: #FFEED9;
+	border-radius: 10px;
+	border: 2px dashed #CC2A41;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	-webkit-box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
+	-moz-box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
+	box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
+	
+	font-family: 'Reggae One', cursive;
+	font-size: 40px;
+	color: #CC2A41;
+	text-align: center;
+}
+
+a.logolink
+{
+	color: #CC2A41;
+	text-decoration: none;
+	display: block;
+	width: 300px;
+}
+
+#content
+{
+	background-color: #FFEED9;
+	border-radius: 10px;
+	width: 360px;
+	height: 390;
+	padding: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border: 2px dashed #CC2A41;
+	text-align: justify;
+}
+
+#LOGcontainer
+{
+	background-color: #FFEED9;
+	border-radius: 10px;
+	width: 300px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: 2px dashed #CC2A41;
+}
+
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	background-color: #EFEFEF;
+	color: #666;
+	border: 2px solid #DDD;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	margin-top: 10px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
+	border: 2px solid #85AAA5;
+	background-color: #B3CAC7;
+	color: #243331;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #64908A;
+	font-size: 20px;
+	color: #FFFFFF;
+	padding: 15px 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+}
+
+input[type=submit]:focus
+{
+	-webkit-box-shadow: 0px 0px 15px 3px rgba(204,204,204,0.9);
+	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
+	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
+}
+
+input[type=submit]:hover
+{
+	background-color: #CC2A41;
+}
+
+input[type=submit]:hover
+{
+	background-color: #CC2A41;
+}
+
+input::-webkit-input-placeholder
+{
+    color: #999;
+}
+input:focus::-webkit-input-placeholder
+{
+    color: #913A47;
+}
+/* Firefox < 19 */
+input:-moz-placeholder
+{
+    color: #999;
+}
+input:focus:-moz-placeholder
+{
+    color: #913A47;
+}
+/* Firefox > 19 */
+input::-moz-placeholder
+{
+    color: #999;
+}
+input:focus::-moz-placeholder
+{
+    color: #913A47;
+}
+/* Internet Explorer 10 */
+input:-ms-input-placeholder
+{
+    color: #999;
+}
+input:focus:-ms-input-placeholder
+{
+    color: #913A47;
+}
