@@ -14,6 +14,161 @@ body
 	margin-right: auto;
 }
 
+h1.logoBar
+{
+	height: 60px;
+	width: 850px;
+	background-color: #FFEED9;
+	border-radius: 10px;
+	border: 2px dashed #CC2A41;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+	font-family: 'Reggae One', cursive;
+	font-size: 40px;
+	color: #CC2A41;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+#buttonBar
+{
+	height: 80px;
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FFEED9;
+	border-radius: 10px;
+	border: 2px dashed #CC2A41;
+	margin-bottom: 10px;
+}
+
+.titleBar
+{
+	height: 20px;
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px;
+	background-color: #351330;
+	border-radius: 10px;
+	border: 2px solid #243331;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFEED9;
+}
+
+.dataSheet
+{
+	height: auto;
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+	background-color: #FFEED9;
+	border-radius: 10px;
+	border: 2px dashed #CC2A41;
+}
+
+.singleData
+{
+	height: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 10px;
+	
+	border: 1px solid #FFF;
+}
+
+#formAlignData
+{
+	width: 300px;
+	height: 50px;
+	margin-left: 250px;
+}
+
+#formAlignText
+{
+	width: 200px;
+	height: 50px;
+	margin-top: 5px;
+	float: left;
+}
+
+.formText
+{
+	width: 200px;
+	background-color: #EFEFEF;
+	color: #666;
+	border: 2px solid #351330;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#expCategory
+{
+	width: 200px;
+	background-color: #EFEFEF;
+	color: #666;
+	border: 2px solid #351330;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#textArea
+{
+	width: 300px;
+	font-family: 'Lato', sans-serif;
+	background-color: #EFEFEF;
+	color: #666;
+	border: 2px solid #351330;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+}
+
+#tableBox
+{
+	height: auto;
+	width: 310;
+	float: left;
+	margin: 10px;
+	text-align: center;
+	border: 1px solid #CC2A41;
+}
+
+table
+{
+	width: 300px;
+	margin: 6px;
+}
+
+td
+{
+	border: 1px solid black;
+}
+
+th
+{
+	border: 1px solid black;
+	font-size: 16px;
+	border-bottom: 2px solid black;
+}
+
 .footer
 {
 	text-align: center;
@@ -42,9 +197,39 @@ body
 	margin-top: 20px;
 	border: none;
 	border-radius: 5px;
-	cursor: pointer;
 	text-align: center;
 	outline: none;	
+}
+
+.tile1:hover
+{
+	background-color: #CC2A41;
+	cursor: pointer;
+}
+
+.tile2
+{
+	font-size: 16px;
+	width: 150px;
+	height: 20px;
+	color: white;
+	text-align: center;
+	background-color: #64908A;
+	border: none;
+	border-radius: 5px;
+	margin-top: 15px;
+	padding: 20px 0px;
+	margin-left: 8px;
+	margin-right: 8px;
+	cursor: pointer;
+	outline: none;
+	float: left;
+}
+
+.tile2:hover
+{
+	background-color: #CC2A41;
+	cursor: pointer;
 }
 
 a.tilelink
@@ -52,7 +237,6 @@ a.tilelink
 	color: #FFFFFF;
 	text-decoration: none;
 	display: block;
-	width: 300px;
 }
 
 #logo
@@ -80,7 +264,7 @@ a.logolink
 	color: #CC2A41;
 	text-decoration: none;
 	display: block;
-	width: 300px;
+	cursor: pointer;
 }
 
 #content
@@ -109,8 +293,7 @@ a.logolink
 	border: 2px dashed #CC2A41;
 }
 
-input[type=text],
-input[type=password]
+.loginText
 {
 	width: 300px;
 	background-color: #EFEFEF;
@@ -124,8 +307,7 @@ input[type=password]
 	margin-top: 10px;
 }
 
-input[type=text]:focus,
-input[type=password]:focus
+.loginText:focus
 {
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
@@ -135,7 +317,7 @@ input[type=password]:focus
 	color: #243331;
 }
 
-input[type=submit]
+.loginSub
 {
 	width: 300px;
 	background-color: #64908A;
@@ -150,19 +332,19 @@ input[type=submit]
 	outline: none;
 }
 
-input[type=submit]:focus
+.loginSub:focus
 {
 	-webkit-box-shadow: 0px 0px 15px 3px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
 }
 
-input[type=submit]:hover
+.loginSub:hover
 {
 	background-color: #CC2A41;
 }
 
-input[type=submit]:hover
+.loginSub:hover
 {
 	background-color: #CC2A41;
 }

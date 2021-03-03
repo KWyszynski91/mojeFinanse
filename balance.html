@@ -1,0 +1,228 @@
+<! DOCTYPE HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>mojeFinanse</title>
+	<meta name="description" content="mF - Panel użytkownika" />
+	<meta name="keywords" content="finanse, dobrobyt, pieniądze" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<a href="menu.html" class="logolink"><h1 class="logoBar">mojeFinanse</h1></a>
+	
+		<nav id="topnav">		
+				<div id="buttonBar">
+						<div class="tile2">
+							<a href="#" class="tilelink">Dodaj przychód</a>
+						</div>
+						<div class="tile2">
+							<a href="expenses.html" class="tilelink">Dodaj wydatek</a>
+						</div>
+						<div class="tile2">
+							<a href="balance.html" class="tilelink">Przeglądaj bilans</a>
+						</div>
+						<div class="tile2">
+							<a href="#" class="tilelink">Ustawienia</a>
+						</div>
+						<div class="tile2">
+							<a href="main.html" class="tilelink">Wyloguj się</a>
+						</div>
+						<div style="clear: both;"></div>
+				</div>
+		</nav>
+	</header>
+	<main>
+			<article>
+					<section>
+						<header>
+							<div class="titleBar">PRZEGLĄDANIE BILANSU</div>
+						</header>
+					</section>
+					
+					<section>
+						<div class="dataSheet">
+						
+							<div class="singleData">
+								<div id="formAlignText">
+									<label for="expCategory">Wybierz okres:</label>
+								</div>
+								<div id="formAlignData">
+									<select id="expCategory">
+											<option value="BAL1">Bieżący miesiąc</option>
+											<option value="BAL2">Poprzedni miesiąc</option>
+											<option value="BAL3">Bieżący rok</option>
+											<option value="BAL3">Niestandardowy...</option>
+									</select> 
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							
+							<div class="singleData">
+								<div id="tableBox" style="margin-left: 63px">
+									<table>
+										<thead>
+											<tr>
+													<th colspan="2">PRZYCHODY W WYBRANYM OKRESIE:</th>
+											</tr>
+											<tr>
+													<th>Kategoria przychodu</th> <th>Wartość [PLN]</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+													<td>Wynagrodzenie</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Odsetki bankowe</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Zwrot długów</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Sprzedaż</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Inne</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>ŁĄCZNIE</td> <td>0.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+								<div id="tableBox">
+									<table>
+										<thead>
+											<tr>
+													<th colspan="2">WYDATKI W WYBRANYM OKRESIE:</th>
+											</tr>
+											<tr>
+													<th>Kategoria wydatku</th> <th>Wartość [PLN]</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+													<td>Darowizna</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Dzieci</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Emerytura</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Garderoba</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Higiena</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Hobby</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Jedzenie</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Książki</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Mieszkanie</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Opieka zdrowotna</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Oszczędności</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Przyjemności</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Rachunki</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Rozrywka</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Samochód</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Spłata długów</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Samochód</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Sport</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Szkolenia</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Telekomunikacja</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Transport</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Wycieczka</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>Zakupy dla domu</td> <td>0.00</td>
+											</tr>
+											<tr>
+													<td>ŁĄCZNIE</td> <td>0.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							
+							<div class="singleData">
+								<div id="tableBox" style="margin-left: 219px">
+									<table>
+										<thead>
+											<tr>
+												<th colspan="3">BILANS:</th>
+											</tr>
+											<tr>
+												<th> suma przychodów </th> <th> suma wydatków </th> <th> bilans </th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>0.00</td> <td>0.00</td> <td>0.00</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+				
+						</div>
+						
+					</section>
+			</article>
+	</main>
+	
+	<footer>
+			<div class="titleBar" style="font-weight: 400; font-size: 14px">
+				mojeFinanse &copy; 2021 jest witryną tworzoną podczas Projektu Przyszły Programista.
+			</div>
+	</footer>
+	
+</body>
+
+</html>
