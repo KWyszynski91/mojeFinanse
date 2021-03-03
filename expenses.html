@@ -1,0 +1,157 @@
+<! DOCTYPE HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8" />
+	<title>mojeFinanse</title>
+	<meta name="description" content="mF - Panel użytkownika" />
+	<meta name="keywords" content="finanse, dobrobyt, pieniądze" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+	
+		<a href="menu.html" class="logolink"><h1 class="logoBar">mojeFinanse</h1></a>
+	
+		<nav id="topnav">		
+				<div id="buttonBar">
+						<div class="tile2">
+							<a href="incomes.html" class="tilelink">Dodaj przychód</a>
+						</div>
+						<div class="tile2">
+							<a href="expenses.html" class="tilelink">Dodaj wydatek</a>
+						</div>
+						<div class="tile2">
+							<a href="balance.html" class="tilelink">Przeglądaj bilans</a>
+						</div>
+						<div class="tile2">
+							<a href="#" class="tilelink">Ustawienia</a>
+						</div>
+						<div class="tile2">
+							<a href="main.html" class="tilelink">Wyloguj się</a>
+						</div>
+						<div style="clear: both;"></div>
+				</div>
+		</nav>
+		
+	</header>
+	
+	<main>
+			<article>
+					<section>
+						<header>
+							<div class="titleBar">DODAWANIE WYDATKU</div>
+						</header>
+					</section>
+					
+					<section>
+						<div class="dataSheet">
+						
+							<div class="singleData">
+								<div id="formAlignText">
+									<label for="fT1">Wartość wydatku:</label>
+								</div>
+								<div id="formAlignData">
+									<input class="formText" id="fT1" type="text" placeholder="0.00 PLN" onfocus="this.placeholder=''" onblur="this.placeholder='0.00 PLN'">
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							
+							<div class="singleData">
+								<div id="formAlignText">
+									<label for="fT2">Data wydatku:</label>
+								</div>
+								<div id="formAlignData">
+									<input class="formText" id="fT2" type="text" maxlength="10" placeholder="RRRR-MM-DD" onfocus="this.placeholder=''" onblur="this.placeholder='RRRR-MM-DD'">
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							
+							<div class="singleData">
+								<div id="formAlignText">
+									<label for="expCategory">Sposób płatności:</label>
+								</div>
+								<div id="formAlignData">
+									<select id="expCategory">
+											<option value="INC1">Gotówka</option>
+											<option value="INC2">Karta debetowa</option>
+											<option value="INC3">Karta kredytowa</option>
+									</select> 
+									<div style="clear: both;"></div>
+								</div>
+							</div>
+							
+							<div class="singleData">
+								<div id="formAlignText">
+									<label for="expCategory">Kategoria wydatku:</label>
+								</div>
+								<div id="formAlignData">
+									<select id="expCategory">
+											<option value="EXPA">Darowizna</option>
+											<option value="EXPB">Dzieci</option>
+											<option value="EXPC">Emerytura</option>
+											<option value="EXPD">Garderoba</option>
+											<option value="EXPE">Higiena</option>
+											<option value="EXPF">Hobby</option>
+											<option value="EXPG">Jedzenie</option>
+											<option value="EXPH">Książki</option>
+											<option value="EXPI">Mieszkanie</option>
+											<option value="EXPJ">Opieka zdrowotna</option>
+											<option value="EXPK">Oszczędności</option>
+											<option value="EXPL">Przyjemności</option>
+											<option value="EXPM">Rachunki</option>
+											<option value="EXPN">Rozrywka</option>
+											<option value="EXPO">Samochód</option>
+											<option value="EXPP">Spłata długów</option>
+											<option value="EXPQ">Sport</option>
+											<option value="EXPR">Szkolenia</option>
+											<option value="EXPS">Telekomunikacja</option>
+											<option value="EXPT">Transport</option>
+											<option value="EXPU">Wycieczka</option>
+											<option value="EXPV">Zakupy dla domu</option>
+									</select> 
+									<div style="clear: both;"></div>
+								</div>
+							</div>
+							
+							<div class="singleData" style="height: 80px">
+								<div id="formAlignText">
+									<label for="textArea" >Komentarz:</label>
+								</div>
+								<div id="formAlignData">
+									<textarea id="textArea" rows="3" cols="30" placeholder="Twoja adnotacja do wydatku"></textarea>
+									<div style="clear: both;"></div>
+								</div>
+							</div>
+							
+							<div class="singleData" style="height: 160px">
+								<div class="tile1" style="margin-left: 250px">
+									<a href="#" class="tilelink">Dodaj</a>
+								</div>
+								<div class="tile1" style="margin-left: 250px">
+									<a href="menu.html" class="tilelink">Anuluj</a>
+								</div>
+								<div style="clear: both;"></div>
+							</div>
+							
+						</div>
+					</section>
+					
+			</article>
+	</main>
+	<footer>
+			<div class="titleBar" style="font-weight: 400; font-size: 14px">
+				mojeFinanse &copy; 2021 jest witryną tworzoną podczas Projektu Przyszły Programista.
+			</div>
+	</footer>
+</body>
+
+</html>
