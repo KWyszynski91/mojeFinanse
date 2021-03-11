@@ -1,5 +1,5 @@
 <! DOCTYPE HTML>
-<html>
+<html lang="pl">
 
 <head>
 
@@ -12,115 +12,122 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 	<header>
+		<div class="header">
+			<div id="headContainer">
+			
+				<div class="logo">
+					<a href="menu.html" class="logolink">mojeFinanse</a>
+				</div>
+				
+				<div class="userinfo">
+					zalogowany: <span style="color:#FFF">Uzytkownik1</span>
+				</div>
+				
+				<div style="clear:both;"></div>
+				
+			</div>
+		</div>
 	
-		<a href="menu.html" class="logolink"><h1 class="logoBar">mojeFinanse</h1></a>
-	
-		<nav id="topnav">		
-				<div id="buttonBar">
-						<div class="tile2">
-							<a href="incomes.html" class="tilelink">Dodaj przychód</a>
-						</div>
-						<div class="tile2">
-							<a href="expenses.html" class="tilelink">Dodaj wydatek</a>
-						</div>
-						<div class="tile2">
-							<a href="balance.html" class="tilelink">Przeglądaj bilans</a>
-						</div>
-						<div class="tile2">
-							<a href="#" class="tilelink">Ustawienia</a>
-						</div>
-						<div class="tile2">
-							<a href="main.html" class="tilelink">Wyloguj się</a>
-						</div>
-						<div style="clear: both;"></div>
+		<nav>		
+				<div class="navigator">
+					<ol>
+						<li><a href="incomes.html">Dodaj przychód</a></li>
+						<li><a href="expenses.html">Dodaj wydatek</a></li>
+						<li><a href="balance.html">Przeglądaj bilans</a></li>
+						<li><a href="#">Ustawienia</a></li>
+						<li><a href="main.html">Wyloguj się</a></li>
+					</ol>
 				</div>
 		</nav>
-		
 	</header>
 	
 	<main>
 			<article>
 					<section>
-						<header>
-							<div class="titleBar">DODAWANIE PRZYCHODU</div>
-						</header>
+							<div class="titleBar">
+								<h4>DODAWANIE PRZYCHODU</h4>
+							</div>
 					</section>
 					
 					<section>
 						<div class="dataSheet">
+						<form>
 						
 							<div class="singleData">
-								<div id="formAlignText">
+								<div class="formAlignText">
 									<label for="fT1">Wartość przychodu:</label>
 								</div>
-								<div id="formAlignData">
+								<div class="formAlignData">
 									<input class="formText" id="fT1" type="text" placeholder="0.00 PLN" onfocus="this.placeholder=''" onblur="this.placeholder='0.00 PLN'">
 								</div>
 								<div style="clear: both;"></div>
 							</div>
 							
 							<div class="singleData">
-								<div id="formAlignText">
+								<div class="formAlignText">
 									<label for="fT2">Data wpłynięcia:</label>
 								</div>
-								<div id="formAlignData">
+								<div class="formAlignData">
 									<input class="formText" id="fT2" type="text" maxlength="10" placeholder="RRRR-MM-DD" onfocus="this.placeholder=''" onblur="this.placeholder='RRRR-MM-DD'">
 								</div>
 								<div style="clear: both;"></div>
 							</div>
 							
 							<div class="singleData">
-								<div id="formAlignText">
-									<label for="expCategory">Kategoria przychodu:</label>
+								<div class="formAlignText">
+									<label for="incCat1">Kategoria przychodu:</label>
 								</div>
-								<div id="formAlignData">
-									<select id="expCategory">
+								<div class="formAlignData">
+									<select class="expCategory" id="incCat1">
 											<option value="INCA">Wynagrodzenie</option>
 											<option value="INCB">Odsetki bankowe</option>
 											<option value="INCC">Zwrot długów</option>
 											<option value="INCD">Sprzedaż</option>
 											<option value="INCE">Inne</option>
 									</select> 
-									<div style="clear: both;"></div>
-								</div>
-							</div>
-							
-							<div class="singleData" style="height: 80px">
-								<div id="formAlignText">
-									<label for="textArea" >Komentarz:</label>
-								</div>
-								<div id="formAlignData">
-									<textarea id="textArea" rows="3" cols="30" placeholder="Twoja adnotacja do przychodu"></textarea>
-									<div style="clear: both;"></div>
-								</div>
-							</div>
-							
-							<div class="singleData" style="height: 160px">
-								<div class="tile1" style="margin-left: 250px">
-									<a href="#" class="tilelink">Dodaj</a>
-								</div>
-								<div class="tile1" style="margin-left: 250px">
-									<a href="menu.html" class="tilelink">Anuluj</a>
 								</div>
 								<div style="clear: both;"></div>
 							</div>
 							
+							<div class="singleData">
+								<div class="formAlignText">
+									<label for="textArea" >Komentarz:</label>
+								</div>
+								<div class="formAlignData">
+									<textarea id="textArea" rows="3" cols="30" placeholder="Twoja adnotacja do przychodu"></textarea>
+								</div>
+							<div style="clear: both;"></div>
+							</div>
+							
+							<div id="singleData">
+								<div class="formAlignData" style="margin-left: 350px">
+									<button  type="submit" class="button1"><a href="#" class="buttonlink">Dodaj</a></button>
+								</div>
+								<div class="formAlignData" style="margin-left: 350px">
+									<button type="submit" class="button1"><a href="menu.html" class="buttonlink">Anuluj</a></button>
+								</div>
+							<div style="clear: both;"></div>
+							</div>
+						
+						</form>
 						</div>
 					</section>
-					
 			</article>
 	</main>
+	
 	<footer>
-			<div class="titleBar" style="font-weight: 400; font-size: 14px">
+			<div class="footerBar">
 				mojeFinanse &copy; 2021 jest witryną tworzoną podczas Projektu Przyszły Programista.
 			</div>
 	</footer>
+	
 </body>
 
 </html>

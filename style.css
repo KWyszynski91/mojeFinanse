@@ -1,130 +1,256 @@
 body
 {
-	background-color: #424254;
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/prism.png");
 	font-family: 'Lato', sans-serif;
 	font-size: 20px;
-	color: #243331;
+	color: #FFF;
+	margin: 0 !important;
 }
 
-#container
+.header
 {
-	width: 850px;
-	padding: 5px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+	height: 1px;
+	padding: 40px 0;
+	background-color: #000;
 }
 
-h1.logoBar
+#headContainer
 {
-	height: 60px;
-	width: 850px;
-	background-color: #FFEED9;
-	border-radius: 10px;
-	border: 2px dashed #CC2A41;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 50px;
+	width: 1000px;
+}
+
+.logo
+{
+	width: 50%;
+	float: left;
+	font-family: 'Poiret One', cursive;
+	color: #FFF;
+}
+
+a.logolink
+{
+	color: #FFF;
+	text-decoration: none;
+	display: block;
+	cursor: pointer;
+}
+
+a.logolink:hover
+{
+	text-decoration: none;
+	color: #8C8C8C;
+}
+
+a.logolink:visited
+{
+	text-decoration: none;
+}
+
+a.logolink:active
+{
+	text-decoration: none;
+}
+
+.userinfo
+{
+	float: left;
+	margin-left: 250px;
+	font-size: 14px;
+	color: #303030;
+}
+
+.navigator
+{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0;
+	background-color: #303030;
+	font-family: 'Poiret One', cursive;
 	text-align: center;
-	font-family: 'Reggae One', cursive;
-	font-size: 40px;
-	color: #CC2A41;
-	text-align: center;
-	padding: 10px 0px;
+	border-top: 1px solid #696969;
+	border-bottom: 1px solid #696969;
 }
 
-#buttonBar
+ol
 {
-	height: 80px;
-	width: 850px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #FFEED9;
-	border-radius: 10px;
-	border: 2px dashed #CC2A41;
-	margin-bottom: 10px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol a
+{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 1px dashed #696969;
+}
+
+ol > li :first-child
+{
+	border-left: 1px dashed #696969;
+}
+
+ol > li:hover
+{
+	background-color: #212121;
+}
+
+ol > li:hover > a
+{
+	color: #FFF;
 }
 
 .titleBar
 {
-	height: 20px;
-	width: 850px;
+	height: 50px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 10px;
 	padding: 10px 0px;
-	background-color: #351330;
-	border-radius: 10px;
-	border: 2px solid #243331;
-	margin-bottom: 10px;
+	font-family: 'Poiret One', cursive;
+	letter-spacing: 3px;
+	background-color: #000;
+	border-top: 1px solid #696969;
+	border-bottom: 1px solid #696969;
 	text-align: center;
-	font-size: 18px;
-	font-weight: 700;
-	color: #FFEED9;
+	color: #FFF;
 }
+
+h4.titleBar
+{}
 
 .dataSheet
 {
 	height: auto;
-	width: 850px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 10px 0px;
-	background-color: #FFEED9;
-	border-radius: 10px;
-	border: 2px dashed #CC2A41;
+	background-color: #696969;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 }
 
 .singleData
 {
-	height: auto;
-	margin-left: 50px;
-	margin-right: 50px;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 10px;
 	
 	border: 1px solid #FFF;
 }
 
-#formAlignData
-{
-	width: 300px;
-	height: 50px;
-	margin-left: 250px;
-}
-
-#formAlignText
+.formAlignText
 {
 	width: 200px;
 	height: 50px;
-	margin-top: 5px;
+	margin-top: 10px;
 	float: left;
+	font-size: 16px;
+	font-family: 'Poiret One', cursive;
+	
+	border: 1px solid #000;
+}
+
+.formAlignData
+{
+	width: 300px;
+	margin-top: 5px;
+	margin-left: 100px;
+	float: left;
+	
+	border: 1px solid #000;
+}
+
+#fATBalance.formAlignText
+{
+	width: 200px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 380px;
+	float: left;
+	font-size: 16px;
+	font-family: 'Poiret One', cursive;
+}
+
+#fADBalance.formAlignData
+{
+	width: 300px;
+	height: 50px;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+#fATMenu.formAlignText
+{
+	width: 448px;
+	height: 200px;
+	margin-top: auto;
+	margin-left: auto;
+	float: left;
+	font-size: 16px;
+	font-family: 'Poiret One', cursive;
+	text-align: justify;
 }
 
 .formText
 {
-	width: 200px;
+	width: 300px;
+	font-family: 'Lato', sans-serif;
 	background-color: #EFEFEF;
 	color: #666;
-	border: 2px solid #351330;
-	border-radius: 5px;
+	border: 2px solid #303030;
+	border-radius: 2px;
 	font-size: 14px;
 	padding: 10px;
 	box-sizing: border-box;
 	outline: none;
 }
 
-#expCategory
+.formText:focus
 {
-	width: 200px;
+	background-color: #EDE8CA;
+}
+
+.expCategory
+{
+	width: 300px;
+	font-family: 'Lato', sans-serif;
 	background-color: #EFEFEF;
 	color: #666;
-	border: 2px solid #351330;
-	border-radius: 5px;
+	border: 2px solid #303030;
+	border-radius: 2px;
 	font-size: 14px;
 	padding: 10px;
 	box-sizing: border-box;
 	outline: none;
+}
+
+.expCategory:focus
+{
+	background-color: #EDE8CA;
 }
 
 #textArea
@@ -133,164 +259,93 @@ h1.logoBar
 	font-family: 'Lato', sans-serif;
 	background-color: #EFEFEF;
 	color: #666;
-	border: 2px solid #351330;
-	border-radius: 5px;
+	border: 2px solid #303030;
+	border-radius: 2px;
 	font-size: 14px;
 	padding: 10px;
 	box-sizing: border-box;
 	outline: none;
 }
 
-#tableBox
+#textArea:focus
+{
+	background-color: #EDE8CA;
+}
+
+.tableBox
 {
 	height: auto;
-	width: 310;
-	float: left;
+	width: 426px;
 	margin: 10px;
-	text-align: center;
-	border: 1px solid #CC2A41;
+	float: left;
+	border-radius: 3px;
 }
 
 table
 {
 	width: 300px;
 	margin: 6px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #303030;
+	border-radius: 3px;
 }
 
 td
 {
-	border: 1px solid black;
+	border-bottom: 1px solid black;
+	text-align: right;
 }
 
 th
 {
-	border: 1px solid black;
 	font-size: 16px;
 	border-bottom: 2px solid black;
 }
 
-.footer
-{
-	text-align: center;
-	background-color: #FFEED9;
-	border-radius: 10px;
-	border: 2px dashed #CC2A41;
-	padding: 30px;
-	margin: 10px;
-	font-size: 14px;
-}
-
-.square
-{
-	width: 400px;
-	float: left;
-	margin: 10px;
-}
-
-.tile1
+.button1
 {
 	width: 300px;
-	background-color: #64908A;
-	font-size: 20px;
-	color: white;
-	padding: 15px 10px;
 	margin-top: 20px;
+	padding: 10px 0px;
+	font-family: 'Poiret One', cursive;
+	background-color: #303030;
+	color: white;
+	font-size: 20px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 2px;
 	text-align: center;
 	outline: none;	
 }
 
-.tile1:hover
+.button1:hover
 {
-	background-color: #CC2A41;
+	background-color: #212121;
 	cursor: pointer;
 }
 
-.tile2
-{
-	font-size: 16px;
-	width: 150px;
-	height: 20px;
-	color: white;
-	text-align: center;
-	background-color: #64908A;
-	border: none;
-	border-radius: 5px;
-	margin-top: 15px;
-	padding: 20px 0px;
-	margin-left: 8px;
-	margin-right: 8px;
-	cursor: pointer;
-	outline: none;
-	float: left;
-}
-
-.tile2:hover
-{
-	background-color: #CC2A41;
-	cursor: pointer;
-}
-
-a.tilelink
+a.buttonlink
 {
 	color: #FFFFFF;
 	text-decoration: none;
 	display: block;
 }
 
-#logo
+.footerBar
 {
-	background-color: #FFEED9;
-	border-radius: 10px;
-	border: 2px dashed #CC2A41;
-	width: 300px;
-	padding: 50px;
+	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 10px;
-	-webkit-box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
-	-moz-box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
-	box-shadow: 15px -30px 100px 0px rgba(0,0,0,0.71);
-	
-	font-family: 'Reggae One', cursive;
-	font-size: 40px;
-	color: #CC2A41;
+	padding: 20px 0px;
+	font-family: 'Poiret One', cursive;
+	font-weight: 400; 
+	font-size: 14px;
 	text-align: center;
-}
-
-a.logolink
-{
-	color: #CC2A41;
-	text-decoration: none;
-	display: block;
-	cursor: pointer;
-}
-
-#content
-{
-	background-color: #FFEED9;
-	border-radius: 10px;
-	width: 360px;
-	height: 390;
-	padding: 20px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-	border: 2px dashed #CC2A41;
-	text-align: justify;
-}
-
-#LOGcontainer
-{
-	background-color: #FFEED9;
-	border-radius: 10px;
-	width: 300px;
-	padding: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-	border: 2px dashed #CC2A41;
+	background-color: #000;
+	border-top: 1px solid #696969;
+	border-bottom: 1px solid #696969;
+	color: #FFF;
 }
 
 .loginText
@@ -298,8 +353,8 @@ a.logolink
 	width: 300px;
 	background-color: #EFEFEF;
 	color: #666;
-	border: 2px solid #DDD;
-	border-radius: 5px;
+	border: 2px solid #303030;
+	border-radius: 2px;
 	font-size: 20px;
 	padding: 10px;
 	box-sizing: border-box;
@@ -312,75 +367,39 @@ a.logolink
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
-	border: 2px solid #85AAA5;
-	background-color: #B3CAC7;
-	color: #243331;
+	border: 2px solid #FFF;
+	background-color: #EDE8CA;
+	color: #000;
 }
 
-.loginSub
+.button2
 {
 	width: 300px;
-	background-color: #64908A;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px 0px;
+	font-family: 'Poiret One', cursive;
+	background-color: #303030;
+	color: white;
 	font-size: 20px;
-	color: #FFFFFF;
-	padding: 15px 10px;
-	margin-top: 20px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 2px;
+	text-align: center;
+	outline: none;	
+}
+
+.button2:hover
+{
+	background-color: #212121;
 	cursor: pointer;
-	letter-spacing: 2px;
-	outline: none;
 }
 
-.loginSub:focus
+.formAlignLogin
 {
-	-webkit-box-shadow: 0px 0px 15px 3px rgba(204,204,204,0.9);
-	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
-	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
-}
-
-.loginSub:hover
-{
-	background-color: #CC2A41;
-}
-
-.loginSub:hover
-{
-	background-color: #CC2A41;
-}
-
-input::-webkit-input-placeholder
-{
-    color: #999;
-}
-input:focus::-webkit-input-placeholder
-{
-    color: #913A47;
-}
-/* Firefox < 19 */
-input:-moz-placeholder
-{
-    color: #999;
-}
-input:focus:-moz-placeholder
-{
-    color: #913A47;
-}
-/* Firefox > 19 */
-input::-moz-placeholder
-{
-    color: #999;
-}
-input:focus::-moz-placeholder
-{
-    color: #913A47;
-}
-/* Internet Explorer 10 */
-input:-ms-input-placeholder
-{
-    color: #999;
-}
-input:focus:-ms-input-placeholder
-{
-    color: #913A47;
+	width: 300px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
 }
