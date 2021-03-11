@@ -12,33 +12,69 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 	
-	<div id="logo">
-		<a href="main.html" class="logolink">mojeFinanse</a>
-	</div>
-	
-	<div id="LOGcontainer">
-	
-		<form>
+		<header>
+			<section>
+				<div class="titleBar">
+					<h4>mojeFinanse</h4>
+				</div>
+			</section>
+		</header>
+		
+		<main>
 			
-			<input class="loginText" type="text" placeholder="adres e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='adres e-mail'">
-			<br /><br />
+			<div class="dataSheet">
+			<form>
 			
-			<input class="loginText" type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
-			<br /><br />
+				<div id="singleData">
+					<div class="formAlignData" id="fADLogin">
+						<input class="loginText" type="text" placeholder="adres e-mail" onfocus="this.placeholder=''" onblur="this.placeholder='adres e-mail'">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="singleData">
+					<div class="formAlignData" id="fADLogin">
+						<input class="loginText" type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="singleData">
+					<div class="formAlignData" id="fADLogin">
+						<input class="loginText" type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="singleData">
+					<div class="formAlignData" id="fADLogin">
+						<input class="loginText" type="password" placeholder="powtórz hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+					</div>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<br /><br />
+				
+				
+				<div id="singleData">
+					<div class="formAlignData" id="fADLogin">
+						<button  type="submit" class="button2"><a href="menu.html" class="buttonlink">Zarejestruj się</a></button>
+					</div>
+					<div class="formAlignData" id="fADLogin">
+						<button type="submit" class="button2"><a href="main.html" class="buttonlink">Wstecz</a></button>
+					</div>
+					<div style="clear: both;"></div>
+				</div>
 			
-			<input class="loginText" type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
-			<br /><br />
-			
-			<input class="loginSub" type="submit"value="Zarejestruj się">
-			
-		</form>
-	</div>
+			</form>
+			</div>
 	
 </body>
 

@@ -1,5 +1,5 @@
 <! DOCTYPE HTML>
-<html>
+<html lang="pl">
 
 <head>
 
@@ -12,52 +12,59 @@
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Reggae+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 	<header>
-		<a href="menu.html" class="logolink"><h1 class="logoBar">mojeFinanse</h1></a>
+		<div class="header">
+			<div id="headContainer">
+			
+				<div class="logo">
+					<a href="menu.html" class="logolink">mojeFinanse</a>
+				</div>
+				
+				<div class="userinfo">
+					zalogowany: <span style="color:#FFF">Uzytkownik1</span> 
+				</div>
+				
+				<div style="clear:both;"></div>
+				
+			</div>
+		</div>
 	
-		<nav id="topnav">		
-				<div id="buttonBar">
-						<div class="tile2">
-							<a href="#" class="tilelink">Dodaj przychód</a>
-						</div>
-						<div class="tile2">
-							<a href="expenses.html" class="tilelink">Dodaj wydatek</a>
-						</div>
-						<div class="tile2">
-							<a href="balance.html" class="tilelink">Przeglądaj bilans</a>
-						</div>
-						<div class="tile2">
-							<a href="#" class="tilelink">Ustawienia</a>
-						</div>
-						<div class="tile2">
-							<a href="main.html" class="tilelink">Wyloguj się</a>
-						</div>
-						<div style="clear: both;"></div>
+		<nav>		
+				<div class="navigator">
+					<ol>
+						<li><a href="incomes.html">Dodaj przychód</a></li>
+						<li><a href="expenses.html">Dodaj wydatek</a></li>
+						<li><a href="balance.html">Przeglądaj bilans</a></li>
+						<li><a href="#">Ustawienia</a></li>
+						<li><a href="main.html">Wyloguj się</a></li>
+					</ol>
 				</div>
 		</nav>
 	</header>
+	
 	<main>
 			<article>
 					<section>
-						<header>
-							<div class="titleBar">PRZEGLĄDANIE BILANSU</div>
-						</header>
+							<div class="titleBar">
+								<h4>PRZEGLĄDANIE BILANSU</h4>
+							</div>
 					</section>
 					
 					<section>
 						<div class="dataSheet">
 						
 							<div class="singleData">
-								<div id="formAlignText">
-									<label for="expCategory">Wybierz okres:</label>
+								<div class="formAlignText" id="fATBalance">
+									<label for="balCat1">Wybierz okres:</label>
 								</div>
-								<div id="formAlignData">
-									<select id="expCategory">
+								<div class="formAlignData" id="fADBalance">
+									<select class="expCategory" id="balCat1">
 											<option value="BAL1">Bieżący miesiąc</option>
 											<option value="BAL2">Poprzedni miesiąc</option>
 											<option value="BAL3">Bieżący rok</option>
@@ -68,14 +75,11 @@
 							</div>
 							
 							<div class="singleData">
-								<div id="tableBox" style="margin-left: 63px">
+								<div class="tableBox">
 									<table>
 										<thead>
 											<tr>
 													<th colspan="2">PRZYCHODY W WYBRANYM OKRESIE:</th>
-											</tr>
-											<tr>
-													<th>Kategoria przychodu</th> <th>Wartość [PLN]</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -101,14 +105,11 @@
 									</table>
 								</div>
 								
-								<div id="tableBox">
+								<div class="tableBox">
 									<table>
 										<thead>
 											<tr>
 													<th colspan="2">WYDATKI W WYBRANYM OKRESIE:</th>
-											</tr>
-											<tr>
-													<th>Kategoria wydatku</th> <th>Wartość [PLN]</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -191,7 +192,7 @@
 							</div>
 							
 							<div class="singleData">
-								<div id="tableBox" style="margin-left: 219px">
+								<div class="tableBox" style="width: 872px">
 									<table>
 										<thead>
 											<tr>
