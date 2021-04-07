@@ -1,18 +1,19 @@
 <! DOCTYPE HTML>
+
 <html lang="pl">
 
 <head>
-
-	<meta charset="utf-8" />
-	<title>mojeFinanse</title>
-	<meta name="description" content="mF - Panel użytkownika" />
-	<meta name="keywords" content="finanse, dobrobyt, pieniądze" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		
-	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="css/fontello.css" type="text/css">
+	<title>mojeFinanse</title>
+	<meta name="description" content="mF - Panel użytkownika" >
+	<meta name="keywords" content="finanse, dobrobyt, pieniądze" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+		
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 
 </head>
@@ -20,209 +21,246 @@
 <body>
 	<header>
 		<div class="header">
-			<div id="headContainer">
-			
-				<div class="logo">
-					<a href="menu.html" class="logolink">mojeFinanse</a>
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-6" id="logo">
+						<a href="start.html" class="logolink">mojeFinanse</a>
+					</div>
+						
+					<div class="col-sm-6" id="userinfo">
+						zalogowany: <span style="color:#FFF">Uzytkownik1</span> 
+					</div>
+						
 				</div>
-				
-				<div class="userinfo">
-					zalogowany: <span style="color:#FFF">Uzytkownik1</span> 
-				</div>
-				
-				<div style="clear:both;"></div>
-				
 			</div>
 		</div>
-	
-		<nav>		
-				<div class="navigator">
-					<ol>
-						<li><a href="incomes.html">Dodaj przychód</a></li>
-						<li><a href="expenses.html">Dodaj wydatek</a></li>
-						<li><a href="balance.html">Przeglądaj bilans</a></li>
-						<li><a href="#">Ustawienia</a></li>
-						<li><a href="main.html">Wyloguj się</a></li>
-					</ol>
-				</div>
-		</nav>
 	</header>
 	
-	<main>
-			<article>
-					<section>
-							<div class="titleBar">
-								<h4>PRZEGLĄDANIE BILANSU</h4>
-							</div>
-					</section>
-					
-					<section>
-						<div class="dataSheet">
-						
-							<div class="singleData">
-								<div class="formAlignText" id="fATBalance">
-									<label for="balCat1">Wybierz okres:</label>
-								</div>
-								<div class="formAlignData" id="fADBalance">
-									<select class="expCategory" id="balCat1">
-											<option value="BAL1">Bieżący miesiąc</option>
-											<option value="BAL2">Poprzedni miesiąc</option>
-											<option value="BAL3">Bieżący rok</option>
-											<option value="BAL3">Niestandardowy...</option>
-									</select> 
-								</div>
-								<div style="clear: both;"></div>
-							</div>
-							
-							<div class="singleData">
-								<div class="tableBox">
-									<table>
-										<thead>
-											<tr>
-													<th colspan="2">PRZYCHODY W WYBRANYM OKRESIE:</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-													<td>Wynagrodzenie</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Odsetki bankowe</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Zwrot długów</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Sprzedaż</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Inne</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>ŁĄCZNIE</td> <td>0.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								
-								<div class="tableBox">
-									<table>
-										<thead>
-											<tr>
-													<th colspan="2">WYDATKI W WYBRANYM OKRESIE:</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-													<td>Darowizna</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Dzieci</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Emerytura</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Garderoba</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Higiena</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Hobby</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Jedzenie</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Książki</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Mieszkanie</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Opieka zdrowotna</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Oszczędności</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Przyjemności</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Rachunki</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Rozrywka</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Samochód</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Spłata długów</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Samochód</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Sport</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Szkolenia</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Telekomunikacja</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Transport</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Wycieczka</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>Zakupy dla domu</td> <td>0.00</td>
-											</tr>
-											<tr>
-													<td>ŁĄCZNIE</td> <td>0.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div style="clear: both;"></div>
-							</div>
-							
-							<div class="singleData">
-								<div class="tableBox" style="width: 872px">
-									<table>
-										<thead>
-											<tr>
-												<th colspan="3">BILANS:</th>
-											</tr>
-											<tr>
-												<th> suma przychodów </th> <th> suma wydatków </th> <th> bilans </th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>0.00</td> <td>0.00</td> <td>0.00</td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-								<div style="clear: both;"></div>
-							</div>
+	<nav class="navbar navbar-dark navbar-expand-md">
+			
+		<button class="navbar-toggler order-first"  type="button" data-bs-toggle="collapse" data-bs-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 				
-						</div>
+		<div class="collapse navbar-collapse" id="mainmenu">
+			<ul class="navbar-nav mr-auto">
+			
+				<li class="nav-item">
+					<a class="nav-link" href="start.html">Start</a>
+				</li>
+							
+				<li class="nav-item">
+					<a class="nav-link" href="incomes.html">Dodaj przychód</a>
+				</li>
+							
+				<li class="nav-item">
+					<a class="nav-link" href="expenses.html">Dodaj wydatek</a>
+				</li>
+							
+				<li class="nav-item">
+					<a class="nav-link active" href="balance.html">Przeglądaj bilans</a>
+				</li>
+							
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Ustawienia</a>
+				</li>
+							
+				<li class="nav-item">
+					<a class="nav-link" href="main.html">Wyloguj się</a>
+				</li>
+							
+			</ul>
+		</div>
+				
+	</nav>
+	
+	<main>
+	
+		<div class="container">
+			
+			<div class="row">
+				<section class="titleBar">
+					<header>
+						<h4>PRZEGLĄDANIE BILANSU</h4>
+					</header>
+				</section>
+			</div>
+					
+			<section class="dataSheet">
+			
+				<div class="row">
+					<div class="col-sm-12 col-md-6" id="formAlignText">
+						<label for="balCat1">Wybierz okres:</label>
+					</div>
+					<div class="col-sm-12 col-md-6" id="formAlignData" style="text-align: left">
+						<select class="expCategory" id="balCat1">
+							<option value="BAL1">Bieżący miesiąc</option>
+							<option value="BAL2">Poprzedni miesiąc</option>
+							<option value="BAL3">Bieżący rok</option>
+							<option value="BAL3">Niestandardowy...</option>
+						</select> 
+					</div>	
+				</div>
+
+				<div class="row">
+					<div class="col-sm-12 col-md-6" id="formAlignText">
+						<table>
+							<thead>
+								<tr>
+										<th colspan="2">PRZYCHODY W WYBRANYM OKRESIE:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Wynagrodzenie</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Odsetki bankowe</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Zwrot długów</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Sprzedaż</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Inne</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>ŁĄCZNIE</td> <td>0.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+					<div class="col-sm-12 col-md-6" id="formAlignText">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="2">WYDATKI W WYBRANYM OKRESIE:</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Darowizna</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Dzieci</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Emerytura</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Garderoba</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Higiena</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Hobby</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Jedzenie</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Książki</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Mieszkanie</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Opieka zdrowotna</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Oszczędności</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Przyjemności</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Rachunki</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Rozrywka</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Samochód</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Spłata długów</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Samochód</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Sport</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Szkolenia</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Telekomunikacja</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Transport</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Wycieczka</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>Zakupy dla domu</td> <td>0.00</td>
+								</tr>
+								<tr>
+									<td>ŁĄCZNIE</td> <td>0.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
+				
+				<div class="row">
+				
+					<div class="col-sm-12 col-md-6" id="formAlignText">
+						<table>
+							<thead>
+								<tr>
+									<th colspan="3">BILANS:</th>
+								</tr>
+								<tr>
+									<th> suma przychodów </th> <th> suma wydatków </th> <th> bilans </th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>0.00</td> <td>0.00</td> <td>0.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					
+				</div>
 						
-					</section>
-			</article>
+			</section>
+		</div>
 	</main>
 	
 	<footer>
-			<div class="titleBar" style="font-weight: 400; font-size: 14px">
-				mojeFinanse &copy; 2021 jest witryną tworzoną podczas Projektu Przyszły Programista.
+		<div class="container">
+			
+			<div class="row">
+				<section class="footerBar">
+					mojeFinanse &copy; 2021 Krzysztof Wyszyński - Przyszły Programista.
+				</section>
 			</div>
+			
+		</div>
 	</footer>
+	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
 	
 </body>
 
