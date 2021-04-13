@@ -1,4 +1,4 @@
-<! DOCTYPE HTML>
+<!DOCTYPE HTML>
 
 <html lang="pl">
 
@@ -9,12 +9,14 @@
 	<title>mojeFinanse</title>
 	<meta name="description" content="mF - Panel użytkownika" >
 	<meta name="keywords" content="finanse, dobrobyt, pieniądze" >
-	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" >
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
 		
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 
    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+   
+   <script src="https://kit.fontawesome.com/908917e88d.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -47,28 +49,35 @@
 			
 			<section class="dataSheet">
 			
-				<div class="row">
-					<div class="col-sm-12" id="formAlignData">
-						<input class="loginText" type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+				<form action="" method="">
+			
+					<div class="row">
+						<div class="col-sm-12" id="formAlignData">
+							<i class="fas fa-user fa-fw"></i>
+							<input class="loginText" type="text" placeholder="login" onfocus="this.placeholder=''" onblur="this.placeholder='login'">
+						</div>
 					</div>
-				</div>
+					
+					<div class="row">
+						<div class="col-sm-12" id="formAlignData">
+							<i class="fas fa-key fa-fw"></i>
+							<input class="loginText" type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
+						</div>
+					</div>
+					
+					<br/><br/>
+					
+					<div id="row">
+						<div class="col-sm-12 col-md-6" id="formAlignData">
+							<button  type="submit" class="button1" onclick="location.href='start.html'">Zaloguj się</button>
+						</div>
+						<div class="col-sm-12 col-md-6" id="formAlignData">
+							<button type="submit" class="button1" onclick="location.href='main.html'">Wstecz</button>
+						</div>
+					</div>
 				
-				<div class="row">
-					<div class="col-sm-12" id="formAlignData">
-						<input class="loginText" type="password" placeholder="hasło" onfocus="this.placeholder=''" onblur="this.placeholder='hasło'">
-					</div>
-				</div>
+				</form>
 				
-				<br/><br/>
-				
-				<div id="row">
-					<div class="col-sm-12 col-md-6" id="formAlignData">
-						<button  type="submit" class="button1"><a href="start.html" class="buttonlink">Zaloguj się</a></button>
-					</div>
-					<div class="col-sm-12 col-md-6" id="formAlignData">
-						<button type="submit" class="button1"><a href="main.html" class="buttonlink">Wstecz</a></button>
-					</div>
-				</div>
 			</section>
 			
 		</div>
