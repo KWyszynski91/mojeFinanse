@@ -3,7 +3,8 @@ body
 	/* Background pattern from Toptal Subtle Patterns */
 	background-image: url("img/prism.png");
 	font-family: 'Lato', sans-serif;
-	font-size: 20px;
+	font-weight: 200;
+	font-size: 18px;
 	color: #FFF;
 	margin: 0 !important;
 }
@@ -32,7 +33,7 @@ a.logolink
 a.logolink:hover
 {
 	text-decoration: none;
-	color: #8C8C8C;
+	color: #C9EFF5;
 }
 
 a.logolink:visited
@@ -93,17 +94,16 @@ ul > li:first-child
 
 ul > li:hover
 {
-	background-color: #212121;
+	background-color: #010312;
 }
 
 ul > li:hover > a
 {
-	color: #FFF;
+	color: #C9EFF5;
 }
 
 .container
 {
-	width: 1000px;
 	padding: 10px 0px;
 }
 
@@ -123,8 +123,7 @@ ul > li:hover > a
 	color: #FFF;
 }
 
-h4.titleBar
-{}
+
 
 .dataSheet
 {
@@ -185,7 +184,7 @@ h4.titleBar
 
 .formText:focus
 {
-	background-color: #EDE8CA;
+	background-color: #C9EFF5;
 }
 
 .expCategory
@@ -204,7 +203,7 @@ h4.titleBar
 
 .expCategory:focus
 {
-	background-color: #EDE8CA;
+	background-color: #C9EFF5;
 }
 
 #textArea
@@ -219,11 +218,12 @@ h4.titleBar
 	padding: 10px;
 	box-sizing: border-box;
 	outline: none;
+	resize: none;
 }
 
 #textArea:focus
 {
-	background-color: #EDE8CA;
+	background-color: #C9EFF5;
 }
 
 table
@@ -253,6 +253,7 @@ th
 	border-bottom: 2px solid black;
 }
 
+/*PRZYCISKI*/
 .button1
 {
 	width: 300px;
@@ -270,7 +271,19 @@ th
 
 .button1:hover
 {
-	background-color: #212121;
+	background-color: #010312;
+	cursor: pointer;
+}
+
+#buttonAccept.button1:hover
+{
+	background-color: #011204;
+	cursor: pointer;
+}
+
+#buttonCancel.button1:hover
+{
+	background-color: #120102;
 	cursor: pointer;
 }
 
@@ -313,9 +326,30 @@ a.buttonlink
 	-webkit-box-shadow: 0px 0px 10px 1px rgba(204,204,204,0.9);
 	-moz-box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9);
 	box-shadow: 3px 3px 30px 2px rgba(204,204,204,0.9); 
-	border: 2px solid #FFF;
-	background-color: #EDE8CA;
+	border: 2px solid #010312;
+	background-color: #C9EFF5;
 	color: #000;
+}
+
+/*ikonki FONT AWSOME*/
+.fa-envelope:hover
+{
+	color: #C9EFF5;
+}
+
+.fa-user-plus:hover
+{
+	color: #C9EFF5;
+}
+
+.fa-key:hover
+{
+	color: #C9EFF5;
+}
+
+.fa-user:hover
+{
+	color: #C9EFF5;
 }
 
 @media (max-width: 767px)
